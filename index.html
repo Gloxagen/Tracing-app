@@ -22,7 +22,7 @@
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             text-align: center;
-            max-width: 500px;
+            max-width: 320px;
             width: 100%;
         }
 
@@ -190,7 +190,7 @@
         </div>
         
         <div class="canvas-container">
-            <canvas id="tracingCanvas" width="300" height="300"></canvas>
+            <canvas id="tracingCanvas" width="280" height="280"></canvas>
         </div>
         
         <div class="controls">
@@ -218,8 +218,8 @@
         let tracedPixels = new Set();
         let isTraceValid = true;
 
-        const canvasWidth = 400;
-        const canvasHeight = 300;
+        const canvasWidth = 280;
+        const canvasHeight = 280;
 
         function initCanvas() {
             canvas.width = canvasWidth;
