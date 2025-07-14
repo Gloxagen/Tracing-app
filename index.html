@@ -22,7 +22,7 @@
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             text-align: center;
-            max-width: 280px;
+            max-width: 500px;
             width: 100%;
         }
 
@@ -191,7 +191,7 @@
         </div>
         
         <div class="canvas-container">
-            <canvas id="tracingCanvas" width="240" height="240"></canvas>
+            <canvas id="tracingCanvas" width="400" height="400"></canvas>
         </div>
         
         <div class="controls">
@@ -212,15 +212,15 @@
         const nextBtn = document.getElementById('nextBtn');
 
         let isDrawing = false;
-        const letters = ['I', 'L', 'T', 'H', 'E', 'F']; // Add whatever letters you had
+        const letters = ['ا', 'ب', 'ت', 'ث', 'ج']; // Add whatever letters you had
         let currentLetterIndex = 0;
         let currentLetter = letters[currentLetterIndex];
         let letterPixels = new Set();
         let tracedPixels = new Set();
         let isTraceValid = true;
 
-        const canvasWidth = 240;
-        const canvasHeight = 240;
+        const canvasWidth = 320;
+        const canvasHeight = 320;
 
         function initCanvas() {
             canvas.width = canvasWidth;
@@ -233,7 +233,7 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             
             ctx.fillStyle = '#ccc';
-            ctx.font = 'bold 200px Arial';
+            ctx.font = 'bold 300px Arial';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillText(currentLetter, canvasWidth/2, canvasHeight/2);
